@@ -1,5 +1,4 @@
-require('./keepalive.js');
-
+require('dotenv').config();
 const { Client, GatewayIntentBits } = require('discord.js');
 const fs = require('fs');
 const path = require('path');
@@ -11,6 +10,8 @@ const client = new Client({
     GatewayIntentBits.MessageContent
   ]
 });
+
+const TOKEN = process.env.TOKEN; // ✅ pulls from env
 
 // 🔐 Your bot token
 const TOKEN = 'TOKEN';
