@@ -13,9 +13,6 @@ const client = new Client({
 
 const TOKEN = process.env.TOKEN; // ✅ pulls from env
 
-// 🔐 Your bot token
-const TOKEN = 'TOKEN';
-
 // 🔗 User ID to card mapping
 const userCards = {
   '565615037180542976': 'txmso.png',
